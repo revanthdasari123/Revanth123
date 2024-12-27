@@ -168,7 +168,6 @@ if (chi_square_result$p.value < 0.05) {
   print("There is no significant relationship between the official/unofficial status and state.")
 }
 
-# Save the plot as a PNG file
 ggsave("VEP_Turnout_vs_States.png", width = 10, height = 8)
 
 ggsave("histogram_normality.png", width = 8, height = 6)
