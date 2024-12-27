@@ -101,7 +101,6 @@ ggplot(elections_stacked_normalized, aes(x = State, y = Percentage, fill = Categ
 #1
 elections$VEP.Turnout.Rate <- as.numeric(gsub("%", "", elections$VEP.Turnout.Rate))
 
-# Create the histogram with density overlay and normal curve
 ggplot(elections, aes(x = VEP.Turnout.Rate)) +
   geom_histogram(aes(y = ..density..), bins = 30, fill = "skyblue", color = "black") +  
   geom_density(color = "red", linetype = "solid", size = 1) +  
@@ -128,7 +127,6 @@ if (normality_assumption == "yes") {
 #2
 elections$VEP.Turnout.Rate <- as.numeric(gsub("%", "", elections$VEP.Turnout.Rate))
 
-# Create the histogram with normal curve overlay
 ggplot(elections, aes(x = VEP.Turnout.Rate)) +
   geom_histogram(aes(y = ..density..), bins = 30, fill = "skyblue", color = "black") +  
   geom_density(color = "red", linetype = "solid", size = 1) +  
