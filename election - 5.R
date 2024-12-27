@@ -157,7 +157,6 @@ print("Contingency Table:")
 print(contingency_table)
 
 
-# Perform the chi-square test
 chi_square_result <- chisq.test(contingency_table)
 
 print("Chi-Square Test Results:")
